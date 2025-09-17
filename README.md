@@ -1,19 +1,18 @@
-🔐 Single Sign-On (SSO)
+# **🔐 Single Sign-On (SSO)**
 
 A secure authentication system enabling users to access multiple applications with a single login. Features include Multi-Factor Authentication (MFA), Role-Based Access Control, robust session management, and strong security practices.
 
-🚀 Features
+###**🚀 Features**
 
 
-1.Single Sign-On: Seamless login to multiple applications with one set of credentials
+1.**Single Sign-On**: Seamless login to multiple applications with one set of credentials
 
-2.Multi-Factor Authentication (MFA): Optional MFA for enhanced security
+2.**Multi-Factor** Authentication (MFA): Optional MFA for enhanced security
 
-3.Role-Based Access Control: Fine-grained authorization management
+3.**Role-Based** Access Control: Fine-grained authorization management
 
-4.Session Management: Single logout (SLO), session timeout, and inactivity logout
-
-5.Security: Encrypted communication, secure token storage (JWT), and protection against common threats
+4.**Session Management**: Single logout (SLO), session timeout, and inactivity logout
+5.**Security**: Encrypted communication, secure token storage (JWT), and protection against common threats
 
 🛠️ Tech Stack
 
