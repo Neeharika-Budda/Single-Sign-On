@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: [process.env.CLIENT_URL, process.env.CLIENT_URL_B],
+    origin: [process.env.CLIENT_URL, process.env.CLIENT_URL_B,"https://single-sign-on-1.onrender.com","https://single-sign-on-2.onrender.com" ],
     credentials: true,
   })
 );
