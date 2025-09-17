@@ -2,7 +2,7 @@
 
 A secure authentication system enabling users to access multiple applications with a single login. Features include Multi-Factor Authentication (MFA), Role-Based Access Control, robust session management, and strong security practices.
 
-###**🚀 Features**
+### **🚀 Features**
 
 
 1.**Single Sign-On**: Seamless login to multiple applications with one set of credentials
@@ -11,7 +11,7 @@ A secure authentication system enabling users to access multiple applications wi
 
 3.**Role-Based** Access Control: Fine-grained authorization management
 
-4.**Session Management**: Single logout (SLO), session timeout, and inactivity logout
+4.**Session Management**: Single logout (SLO), session timeout, and inactivity logout<br>
 5.**Security**: Encrypted communication, secure token storage (JWT), and protection against common threats
 
 🛠️ Tech Stack
