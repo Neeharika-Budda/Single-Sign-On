@@ -27,8 +27,7 @@ export default function App() {
     <div className="min-h-screen bg-gray-50">
       <Navbar />
       <Routes>
-         <Route path="/" element={<Dashboard />}/>
-        {/* <Route path="/" element={user ? <Dashboard /> : <Navigate to="/login" />} /> */}
+        <Route path="/" element={user ? <Dashboard /> : <Navigate to="/login" />} />
         <Route path="/login" element={user ? <Navigate to="/" /> : <Login />} />
         <Route path="/register" element={user ? <Navigate to="/" /> : <Register />} />
         <Route path="/verify" element={<VerifyNotice />} />
