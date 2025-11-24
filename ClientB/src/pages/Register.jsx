@@ -26,7 +26,6 @@ export default function Register() {
     try {
       await register(form.name, form.email, form.password);
       setMsg('Check your email to verify!');
-      setTimeout(() => nav('/verify'), 1000);
     } catch (e) {
       setErr(e.message || 'Registration failed');
     } finally {
