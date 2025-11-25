@@ -59,8 +59,11 @@ export async function register(req, res) {
     );
 
     const link = `${process.env.CLIENT_URL}/verify?token=${verifyToken}`;
-    await sendVerificationEmail(email, link);
-    // console.log(`Sending email to: ${email} with token: ${verifyToken}`);
+    try {
+      await sendVerificationEmail(email, link);
+    } catch (emailError) {
+      console.error('Email send failed:', emailError.message);
+    }
 
     res.status(201).json({ message: 'Registered. Verify email.' });
   } catch (err) {
@@ -116,11 +119,15 @@ export async function verifyEmail(req, res) {
      });
      console.log('hey')
      // Send email
-    await sendVerificationEmail(
-      user.email,
-       `<p>Your login code is: <strong>${otp}</strong> (valid 5 min)</p>`
-     );
- 
+     try {
+       await sendVerificationEmail(
+         user.email,
+         `<p>Your login code is: <strong>${otp}</strong> (valid 5 min)</p>`
+       );
+     } catch (emailError) {
+       console.error('MFA Email send failed:', emailError.message);
+     }
+
      res.json({ mfaRequired: true, userId: user._id });
    } catch (err) {
      res.status(500).json({ message: err.message });
